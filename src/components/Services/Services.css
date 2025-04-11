@@ -1,0 +1,82 @@
+.services {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+  gap: 3rem;
+  margin-top: 9rem;
+  margin-bottom: 13rem;
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Left side */
+.awesome {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+}
+
+.awesome > :nth-child(1),
+.awesome > :nth-child(2) {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.awesome > :nth-child(1) {
+  color: var(--black);
+}
+
+.awesome > :nth-child(2) {
+  color: var(--orange);
+}
+
+.awesome > :nth-child(3) {
+  color: var(--gray);
+  font-size: 14px;
+  margin-top: 1rem;
+  line-height: 1.6;
+}
+
+.s-button {
+  width: 8rem;
+  height: 2rem;
+  margin-top: 1rem;
+}
+
+/* Right side - cards */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  width: 100%;
+  z-index: 1;
+}
+
+.cards > * {
+  flex: 0 1 250px;
+  max-width: 250px;
+  min-height: 250px;
+  position: relative;
+  z-index: 1;
+}
+
+/* Blur styles */
+.s-blur1, .s-blur2 {
+  position: absolute;
+  width: 15rem;
+  height: 10rem;
+  filter: blur(72px);
+  z-index: 0;
+}
+
+.s-blur1 {
+  top: 13rem;
+  left: -18rem;
+}
+
+.s-blur2 {
+  top: 8rem;
+  left: 14rem;
+}
